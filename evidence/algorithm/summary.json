@@ -1,0 +1,371 @@
+{
+  "status": "pass",
+  "claim_boundary": "Paper-facing join of already accepted topology-specific algorithm evidence. Rows are not a cross-topology accuracy ranking and do not establish global mask optimality or natural-domain generalization.",
+  "profiles": [
+    {
+      "topology": "FC",
+      "dataset": "N-MNIST",
+      "model": "2312-160-10",
+      "selected_mask": "W2",
+      "numeric_contract": "INT8 forward code; UQ6.10 trace; Q0.15 residual; delta=-RNE(G*11/2^26)",
+      "learning_rule": "INT8 magnitude-residual update",
+      "runtime_point": "batch=16; support=16 samples/class",
+      "mutable_parameters": 1600,
+      "mutable_state_bytes": 6400,
+      "larger_mask": "W0+W2",
+      "larger_over_selected_state_ratio": 232.2,
+      "evaluation_scope": "pre-locked official-test report",
+      "episodes": 15,
+      "independent_seed_clusters": 5,
+      "gain_points_mean": 1.9780000000000002,
+      "gain_points_stdev": 1.3784928968502737,
+      "cluster_ci95_low": 1.8173333333333308,
+      "cluster_ci95_high": 2.126000000000002,
+      "positive_episodes": 15,
+      "nondegrading_episodes": 15,
+      "clean_budget_episodes": 15,
+      "perturbations": "spatial shifts (+2,0),(-2,0),(0,+2)",
+      "hardware_decision": "Keep W0 immutable and update W2 only; W0+W2 is retained as an algorithm ablation rather than the publication hardware profile.",
+      "limitation": "N-MNIST only; synthetic spatial shifts; five support-seed clusters.",
+      "profile_source": "results/paper_evidence/algorithm/mask_ablation_20260919/fc_h160_w2_int8_magnitude_uq6_10_official_test_report_20260924/report_summary.json",
+      "statistics_source": "results\\paper_evidence\\algorithm\\mask_ablation_20260919\\fc_h160_w2_int8_magnitude_uq6_10_official_test_report_20260924\\report_summary.json",
+      "cost_source": "results/paper_evidence/algorithm/selective_adaptation_pareto_20260927/summary.json"
+    },
+    {
+      "topology": "SRNN",
+      "dataset": "SHD",
+      "model": "frozen 700x450 recurrent backbone + 450-256-20 M2",
+      "selected_mask": "Wout",
+      "numeric_contract": "signed Q2.14 Wout code/residual",
+      "learning_rule": "direct-response update (increment=31, threshold=65)",
+      "runtime_point": "support=128 labelled samples; shifts=+/-16 channels",
+      "mutable_parameters": 5120,
+      "mutable_state_bytes": 20480,
+      "larger_mask": "Wh1+Wout",
+      "larger_over_selected_state_ratio": 23.5,
+      "evaluation_scope": "pre-locked report plus no-retuning post-lock replication",
+      "episodes": 20,
+      "independent_seed_clusters": 10,
+      "gain_points_mean": 0.7751766784452263,
+      "gain_points_stdev": 0.6332565302057576,
+      "cluster_ci95_low": 0.4880742049469921,
+      "cluster_ci95_high": 1.0733215547703145,
+      "positive_episodes": 18,
+      "nondegrading_episodes": 19,
+      "clean_budget_episodes": 20,
+      "perturbations": "frequency shifts +16 and -16",
+      "hardware_decision": "Keep the pre-locked 128-sample report point. Support=64 is a lower-work option and support=256 is an accuracy-oriented option; official-test sensitivity is not used for post-hoc reselection.",
+      "limitation": "SHD only; frozen 700x450 recurrent backbone; synthetic frequency shifts; one regressing episode remains.",
+      "profile_source": "results/paper_evidence/algorithm/mask_ablation_20260919/srnn_wout_postlock_replication_20260927/summary.json",
+      "statistics_source": "results\\paper_evidence\\algorithm\\mask_ablation_20260919\\srnn_wout_postlock_replication_20260927\\summary.json",
+      "cost_source": "results/paper_evidence/algorithm/selective_adaptation_pareto_20260927/summary.json"
+    },
+    {
+      "topology": "SCNN",
+      "dataset": "DVS-Gesture",
+      "model": "eight-convolution VGG-9 SNN + 2048-11 classifier",
+      "selected_mask": "classifier",
+      "numeric_contract": "Q8.8 pooled observation; Q0.15 classifier code/residual; shared-port multiplier=640",
+      "learning_rule": "fixed-SGD magnitude-residual update",
+      "runtime_point": "batch=4; temporal window T=4",
+      "mutable_parameters": 22528,
+      "mutable_state_bytes": 90112,
+      "larger_mask": "Conv8+classifier",
+      "larger_over_selected_state_ratio": 105.72727272727273,
+      "evaluation_scope": "pre-locked report plus no-retuning post-lock replication",
+      "episodes": 48,
+      "independent_seed_clusters": 8,
+      "gain_points_mean": 5.34090909090909,
+      "gain_points_stdev": 4.205569080964649,
+      "cluster_ci95_low": 4.659090909090907,
+      "cluster_ci95_high": 5.984848484848486,
+      "positive_episodes": 40,
+      "nondegrading_episodes": 48,
+      "clean_budget_episodes": 48,
+      "perturbations": "jitter1, event-drop40, polarity-flip40",
+      "hardware_decision": "Keep classifier-only as the main profile. T=4 is the engineering balance: it matches T=2/T=8 outcomes in the bounded sensitivity while halving update windows versus T=2 without T=8 residency.",
+      "limitation": "DVS-Gesture only; bounded synthetic corruptions; Conv8's zero incremental gain does not exclude longer-horizon or independently scaled deeper-layer adaptation.",
+      "profile_source": "results/paper_evidence/algorithm/mask_ablation_20260919/scnn_q1_15_postlock_replication_20260927/summary.json",
+      "statistics_source": "results\\paper_evidence\\algorithm\\mask_ablation_20260919\\scnn_q1_15_postlock_replication_20260927\\summary.json",
+      "cost_source": "results/paper_evidence/algorithm/selective_adaptation_pareto_20260927/summary.json"
+    }
+  ],
+  "runtime_sensitivity": {
+    "srnn_support": {
+      "locked_main_point": 128,
+      "alternatives": {
+        "64": {
+          "episodes": 10,
+          "shifted_gain_points": {
+            "mean": 0.4284452296819774,
+            "stdev": 0.3450039679360138,
+            "min": -0.04416961130742081,
+            "max": 1.0600706713780883
+          },
+          "clean_change_points": {
+            "mean": 0.017667844522966103,
+            "stdev": 0.21656626629207032,
+            "min": -0.26501766784452485,
+            "max": 0.30918727915193456
+          },
+          "positive_gain_episodes": 8,
+          "nondegrading_gain_episodes": 9,
+          "clean_loss_within_1pt_episodes": 10,
+          "mean_rmw": 428680.2,
+          "mean_code_writes": 193258.6
+        },
+        "128": {
+          "episodes": 10,
+          "shifted_gain_points": {
+            "mean": 0.6713780918727874,
+            "stdev": 0.6345068822563804,
+            "min": -0.8392226148409954,
+            "max": 1.5017667844522964
+          },
+          "clean_change_points": {
+            "mean": -0.07067137809187773,
+            "stdev": 0.47251162969315585,
+            "min": -0.927561837455837,
+            "max": 0.5300353356890386
+          },
+          "positive_gain_episodes": 9,
+          "nondegrading_gain_episodes": 9,
+          "clean_loss_within_1pt_episodes": 10,
+          "mean_rmw": 868830.2,
+          "mean_code_writes": 393128.0
+        },
+        "256": {
+          "episodes": 10,
+          "shifted_gain_points": {
+            "mean": 1.0777385159010577,
+            "stdev": 0.5531615619948139,
+            "min": 0.3975265017667873,
+            "max": 2.3409893992932806
+          },
+          "clean_change_points": {
+            "mean": 0.30035335689045484,
+            "stdev": 0.3725988817837995,
+            "min": -0.3975265017667873,
+            "max": 0.8833922261484051
+          },
+          "positive_gain_episodes": 10,
+          "nondegrading_gain_episodes": 10,
+          "clean_loss_within_1pt_episodes": 10,
+          "mean_rmw": 1809617.8,
+          "mean_code_writes": 820810.6
+        }
+      },
+      "paired_deltas_vs_128": {
+        "64": {
+          "paired_episodes": 10,
+          "gain_delta_points": {
+            "mean": -0.24293286219081,
+            "stdev": 0.46963327538904787,
+            "min": -1.1042402826855091,
+            "max": 0.7950530035335746
+          },
+          "clean_delta_points": {
+            "mean": 0.08833922261484384,
+            "stdev": 0.4381482956762288,
+            "min": -0.30918727915193456,
+            "max": 1.0600706713780994
+          },
+          "rmw_ratio": {
+            "mean": 0.49374981281088326,
+            "stdev": 0.026041748089854273,
+            "min": 0.4473150375765678,
+            "max": 0.5300565058139131
+          }
+        },
+        "256": {
+          "paired_episodes": 10,
+          "gain_delta_points": {
+            "mean": 0.4063604240282704,
+            "stdev": 0.7238427712233754,
+            "min": -0.4416961130742081,
+            "max": 1.7667844522968212
+          },
+          "clean_delta_points": {
+            "mean": 0.37102473498233257,
+            "stdev": 0.5113765243253089,
+            "min": -0.26501766784452485,
+            "max": 1.1925795053003507
+          },
+          "rmw_ratio": {
+            "mean": 2.083436856794673,
+            "stdev": 0.05397779510127049,
+            "min": 2.010927005794221,
+            "max": 2.162301961755163
+          }
+        }
+      },
+      "decision": "Keep the pre-locked 128-sample report point. Support=64 is a lower-work option and support=256 is an accuracy-oriented option; official-test sensitivity is not used for post-hoc reselection.",
+      "source": "results/paper_evidence/algorithm/mask_ablation_20260919/srnn_wout_support_sensitivity_20260927/summary.json"
+    },
+    "scnn_window": {
+      "locked_main_point": 4,
+      "alternatives": {
+        "1": {
+          "episodes": 48,
+          "gain_points": {
+            "mean": 2.039141414141414,
+            "stdev": 4.0857569423997955,
+            "min": -9.090909090909093,
+            "max": 13.63636363636364
+          },
+          "clean_change_points": {
+            "mean": 0.7196969696969697,
+            "stdev": 1.7304429970455188,
+            "min": -1.8181818181818272,
+            "max": 4.545454545454547
+          },
+          "positive_episodes": 27,
+          "nondegrading_episodes": 42,
+          "clean_loss_within_1pt_episodes": 47,
+          "mean_code_writes": 20656.395833333332,
+          "mean_update_windows": 180.0,
+          "mean_adaptation_samples_used": 36.0
+        },
+        "2": {
+          "episodes": 48,
+          "gain_points": {
+            "mean": 2.0864898989898983,
+            "stdev": 4.021844952523096,
+            "min": -9.090909090909093,
+            "max": 13.63636363636364
+          },
+          "clean_change_points": {
+            "mean": 0.7196969696969697,
+            "stdev": 1.7304429970455188,
+            "min": -1.8181818181818272,
+            "max": 4.545454545454547
+          },
+          "positive_episodes": 27,
+          "nondegrading_episodes": 42,
+          "clean_loss_within_1pt_episodes": 47,
+          "mean_code_writes": 20671.854166666668,
+          "mean_update_windows": 90.0,
+          "mean_adaptation_samples_used": 36.0
+        },
+        "4": {
+          "episodes": 48,
+          "gain_points": {
+            "mean": 2.0864898989898983,
+            "stdev": 4.021844952523096,
+            "min": -9.090909090909093,
+            "max": 13.63636363636364
+          },
+          "clean_change_points": {
+            "mean": 0.7196969696969697,
+            "stdev": 1.7304429970455188,
+            "min": -1.8181818181818272,
+            "max": 4.545454545454547
+          },
+          "positive_episodes": 27,
+          "nondegrading_episodes": 42,
+          "clean_loss_within_1pt_episodes": 47,
+          "mean_code_writes": 20575.875,
+          "mean_update_windows": 45.0,
+          "mean_adaptation_samples_used": 36.0
+        },
+        "8": {
+          "episodes": 48,
+          "gain_points": {
+            "mean": 2.0864898989898983,
+            "stdev": 4.021844952523096,
+            "min": -9.090909090909093,
+            "max": 13.63636363636364
+          },
+          "clean_change_points": {
+            "mean": 0.7196969696969697,
+            "stdev": 1.7304429970455188,
+            "min": -1.8181818181818272,
+            "max": 4.545454545454547
+          },
+          "positive_episodes": 27,
+          "nondegrading_episodes": 42,
+          "clean_loss_within_1pt_episodes": 47,
+          "mean_code_writes": 20376.770833333332,
+          "mean_update_windows": 27.0,
+          "mean_adaptation_samples_used": 36.0
+        }
+      },
+      "paired_deltas_vs_window4": {
+        "1": {
+          "paired_episodes": 48,
+          "gain_delta_points": {
+            "mean": -0.047348484848484716,
+            "stdev": 0.3246048579735334,
+            "min": -2.2727272727272663,
+            "max": 0.0
+          },
+          "clean_delta_points": {
+            "mean": 0.0,
+            "stdev": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "code_write_ratio": {
+            "mean": 1.0033865630614969,
+            "stdev": 0.009977495597900466,
+            "min": 0.9897908366533864,
+            "max": 1.0380922184980523
+          }
+        },
+        "2": {
+          "paired_episodes": 48,
+          "gain_delta_points": {
+            "mean": 0.0,
+            "stdev": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "clean_delta_points": {
+            "mean": 0.0,
+            "stdev": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "code_write_ratio": {
+            "mean": 1.0041326592776612,
+            "stdev": 0.009938571752682104,
+            "min": 0.9938745019920319,
+            "max": 1.0384092762025545
+          }
+        },
+        "8": {
+          "paired_episodes": 48,
+          "gain_delta_points": {
+            "mean": 0.0,
+            "stdev": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "clean_delta_points": {
+            "mean": 0.0,
+            "stdev": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "code_write_ratio": {
+            "mean": 0.9907912538051599,
+            "stdev": 0.011677799394495042,
+            "min": 0.9683275973864033,
+            "max": 1.0075854156042836
+          }
+        }
+      },
+      "decision": "Keep classifier-only as the main profile. T=4 is the engineering balance: it matches T=2/T=8 outcomes in the bounded sensitivity while halving update windows versus T=2 without T=8 residency.",
+      "source": "results/paper_evidence/algorithm/mask_ablation_20260919/scnn_q1_15_window_sensitivity_20260927/summary.json"
+    }
+  },
+  "source_files": {
+    "pareto": "results/paper_evidence/algorithm/selective_adaptation_pareto_20260927/summary.json",
+    "statistics": "results/paper_evidence/algorithm/online_adaptation_statistics_20260927/summary.json",
+    "fc": "results/paper_evidence/algorithm/mask_ablation_20260919/fc_h160_w2_int8_magnitude_uq6_10_official_test_report_20260924/report_summary.json",
+    "srnn": "results/paper_evidence/algorithm/mask_ablation_20260919/srnn_wout_postlock_replication_20260927/summary.json",
+    "scnn": "results/paper_evidence/algorithm/mask_ablation_20260919/scnn_q1_15_postlock_replication_20260927/summary.json",
+    "srnn_support": "results/paper_evidence/algorithm/mask_ablation_20260919/srnn_wout_support_sensitivity_20260927/summary.json",
+    "scnn_window": "results/paper_evidence/algorithm/mask_ablation_20260919/scnn_q1_15_window_sensitivity_20260927/summary.json"
+  }
+}

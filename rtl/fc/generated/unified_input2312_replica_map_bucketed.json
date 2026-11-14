@@ -1,0 +1,876 @@
+{
+  "schema_version": 1,
+  "input_max": 2312,
+  "calibration_samples": 512,
+  "held_out_samples": 512,
+  "rows": 96,
+  "prefix_bits": 7,
+  "low_bits": 5,
+  "max_bucket_entries": 9,
+  "entries": [
+    {
+      "feature": 896,
+      "primary_bank": 3,
+      "replica_bank": 4,
+      "calibration_standalone_gain": 417,
+      "calibration_events": 2615,
+      "primary_addr": 112,
+      "replica_addr": 289
+    },
+    {
+      "feature": 934,
+      "primary_bank": 5,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 416,
+      "calibration_events": 2766,
+      "primary_addr": 116,
+      "replica_addr": 289
+    },
+    {
+      "feature": 895,
+      "primary_bank": 1,
+      "replica_bank": 6,
+      "calibration_standalone_gain": 380,
+      "calibration_events": 2711,
+      "primary_addr": 111,
+      "replica_addr": 289
+    },
+    {
+      "feature": 897,
+      "primary_bank": 2,
+      "replica_bank": 6,
+      "calibration_standalone_gain": 379,
+      "calibration_events": 2296,
+      "primary_addr": 112,
+      "replica_addr": 290
+    },
+    {
+      "feature": 1476,
+      "primary_bank": 3,
+      "replica_bank": 0,
+      "calibration_standalone_gain": 376,
+      "calibration_events": 2394,
+      "primary_addr": 184,
+      "replica_addr": 289
+    },
+    {
+      "feature": 802,
+      "primary_bank": 0,
+      "replica_bank": 4,
+      "calibration_standalone_gain": 368,
+      "calibration_events": 2844,
+      "primary_addr": 100,
+      "replica_addr": 290
+    },
+    {
+      "feature": 967,
+      "primary_bank": 0,
+      "replica_bank": 5,
+      "calibration_standalone_gain": 366,
+      "calibration_events": 2414,
+      "primary_addr": 120,
+      "replica_addr": 289
+    },
+    {
+      "feature": 869,
+      "primary_bank": 3,
+      "replica_bank": 4,
+      "calibration_standalone_gain": 365,
+      "calibration_events": 2421,
+      "primary_addr": 108,
+      "replica_addr": 291
+    },
+    {
+      "feature": 870,
+      "primary_bank": 0,
+      "replica_bank": 5,
+      "calibration_standalone_gain": 365,
+      "calibration_events": 2236,
+      "primary_addr": 108,
+      "replica_addr": 290
+    },
+    {
+      "feature": 861,
+      "primary_bank": 3,
+      "replica_bank": 6,
+      "calibration_standalone_gain": 364,
+      "calibration_events": 2271,
+      "primary_addr": 107,
+      "replica_addr": 291
+    },
+    {
+      "feature": 424,
+      "primary_bank": 3,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 361,
+      "calibration_events": 2341,
+      "primary_addr": 53,
+      "replica_addr": 290
+    },
+    {
+      "feature": 1509,
+      "primary_bank": 2,
+      "replica_bank": 0,
+      "calibration_standalone_gain": 357,
+      "calibration_events": 2476,
+      "primary_addr": 188,
+      "replica_addr": 290
+    },
+    {
+      "feature": 1952,
+      "primary_bank": 3,
+      "replica_bank": 6,
+      "calibration_standalone_gain": 353,
+      "calibration_events": 1967,
+      "primary_addr": 244,
+      "replica_addr": 292
+    },
+    {
+      "feature": 1920,
+      "primary_bank": 3,
+      "replica_bank": 6,
+      "calibration_standalone_gain": 351,
+      "calibration_events": 2046,
+      "primary_addr": 240,
+      "replica_addr": 293
+    },
+    {
+      "feature": 932,
+      "primary_bank": 7,
+      "replica_bank": 6,
+      "calibration_standalone_gain": 350,
+      "calibration_events": 2670,
+      "primary_addr": 116,
+      "replica_addr": 294
+    },
+    {
+      "feature": 801,
+      "primary_bank": 3,
+      "replica_bank": 0,
+      "calibration_standalone_gain": 343,
+      "calibration_events": 2173,
+      "primary_addr": 100,
+      "replica_addr": 291
+    },
+    {
+      "feature": 835,
+      "primary_bank": 5,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 343,
+      "calibration_events": 2048,
+      "primary_addr": 104,
+      "replica_addr": 291
+    },
+    {
+      "feature": 860,
+      "primary_bank": 2,
+      "replica_bank": 6,
+      "calibration_standalone_gain": 342,
+      "calibration_events": 2217,
+      "primary_addr": 107,
+      "replica_addr": 295
+    },
+    {
+      "feature": 1957,
+      "primary_bank": 6,
+      "replica_bank": 2,
+      "calibration_standalone_gain": 342,
+      "calibration_events": 2110,
+      "primary_addr": 244,
+      "replica_addr": 289
+    },
+    {
+      "feature": 867,
+      "primary_bank": 5,
+      "replica_bank": 6,
+      "calibration_standalone_gain": 339,
+      "calibration_events": 2541,
+      "primary_addr": 108,
+      "replica_addr": 296
+    },
+    {
+      "feature": 868,
+      "primary_bank": 2,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 339,
+      "calibration_events": 2486,
+      "primary_addr": 108,
+      "replica_addr": 292
+    },
+    {
+      "feature": 1408,
+      "primary_bank": 3,
+      "replica_bank": 0,
+      "calibration_standalone_gain": 337,
+      "calibration_events": 1895,
+      "primary_addr": 176,
+      "replica_addr": 292
+    },
+    {
+      "feature": 898,
+      "primary_bank": 1,
+      "replica_bank": 6,
+      "calibration_standalone_gain": 335,
+      "calibration_events": 2390,
+      "primary_addr": 112,
+      "replica_addr": 297
+    },
+    {
+      "feature": 1511,
+      "primary_bank": 0,
+      "replica_bank": 2,
+      "calibration_standalone_gain": 335,
+      "calibration_events": 2181,
+      "primary_addr": 188,
+      "replica_addr": 290
+    },
+    {
+      "feature": 834,
+      "primary_bank": 4,
+      "replica_bank": 0,
+      "calibration_standalone_gain": 333,
+      "calibration_events": 2146,
+      "primary_addr": 104,
+      "replica_addr": 293
+    },
+    {
+      "feature": 929,
+      "primary_bank": 2,
+      "replica_bank": 0,
+      "calibration_standalone_gain": 331,
+      "calibration_events": 2239,
+      "primary_addr": 116,
+      "replica_addr": 294
+    },
+    {
+      "feature": 422,
+      "primary_bank": 5,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 330,
+      "calibration_events": 2083,
+      "primary_addr": 52,
+      "replica_addr": 293
+    },
+    {
+      "feature": 1609,
+      "primary_bank": 5,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 329,
+      "calibration_events": 1961,
+      "primary_addr": 201,
+      "replica_addr": 294
+    },
+    {
+      "feature": 1479,
+      "primary_bank": 0,
+      "replica_bank": 6,
+      "calibration_standalone_gain": 328,
+      "calibration_events": 2315,
+      "primary_addr": 184,
+      "replica_addr": 298
+    },
+    {
+      "feature": 1515,
+      "primary_bank": 4,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 328,
+      "calibration_events": 2136,
+      "primary_addr": 189,
+      "replica_addr": 295
+    },
+    {
+      "feature": 900,
+      "primary_bank": 7,
+      "replica_bank": 6,
+      "calibration_standalone_gain": 324,
+      "calibration_events": 2612,
+      "primary_addr": 112,
+      "replica_addr": 299
+    },
+    {
+      "feature": 356,
+      "primary_bank": 2,
+      "replica_bank": 6,
+      "calibration_standalone_gain": 324,
+      "calibration_events": 2062,
+      "primary_addr": 44,
+      "replica_addr": 300
+    },
+    {
+      "feature": 1855,
+      "primary_bank": 5,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 324,
+      "calibration_events": 1988,
+      "primary_addr": 231,
+      "replica_addr": 296
+    },
+    {
+      "feature": 1440,
+      "primary_bank": 3,
+      "replica_bank": 0,
+      "calibration_standalone_gain": 324,
+      "calibration_events": 1836,
+      "primary_addr": 180,
+      "replica_addr": 295
+    },
+    {
+      "feature": 2023,
+      "primary_bank": 0,
+      "replica_bank": 3,
+      "calibration_standalone_gain": 323,
+      "calibration_events": 1754,
+      "primary_addr": 252,
+      "replica_addr": 289
+    },
+    {
+      "feature": 1541,
+      "primary_bank": 5,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 322,
+      "calibration_events": 2035,
+      "primary_addr": 192,
+      "replica_addr": 297
+    },
+    {
+      "feature": 1446,
+      "primary_bank": 5,
+      "replica_bank": 7,
+      "calibration_standalone_gain": 321,
+      "calibration_events": 1941,
+      "primary_addr": 180,
+      "replica_addr": 289
+    },
+    {
+      "feature": 1953,
+      "primary_bank": 2,
+      "replica_bank": 0,
+      "calibration_standalone_gain": 320,
+      "calibration_events": 2108,
+      "primary_addr": 244,
+      "replica_addr": 296
+    },
+    {
+      "feature": 770,
+      "primary_bank": 0,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 319,
+      "calibration_events": 1856,
+      "primary_addr": 96,
+      "replica_addr": 298
+    },
+    {
+      "feature": 1986,
+      "primary_bank": 5,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 318,
+      "calibration_events": 2145,
+      "primary_addr": 248,
+      "replica_addr": 299
+    },
+    {
+      "feature": 459,
+      "primary_bank": 4,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 317,
+      "calibration_events": 2018,
+      "primary_addr": 57,
+      "replica_addr": 300
+    },
+    {
+      "feature": 491,
+      "primary_bank": 4,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 317,
+      "calibration_events": 1794,
+      "primary_addr": 61,
+      "replica_addr": 301
+    },
+    {
+      "feature": 836,
+      "primary_bank": 2,
+      "replica_bank": 4,
+      "calibration_standalone_gain": 316,
+      "calibration_events": 2338,
+      "primary_addr": 104,
+      "replica_addr": 292
+    },
+    {
+      "feature": 969,
+      "primary_bank": 6,
+      "replica_bank": 2,
+      "calibration_standalone_gain": 316,
+      "calibration_events": 2251,
+      "primary_addr": 121,
+      "replica_addr": 291
+    },
+    {
+      "feature": 1508,
+      "primary_bank": 3,
+      "replica_bank": 0,
+      "calibration_standalone_gain": 316,
+      "calibration_events": 2031,
+      "primary_addr": 188,
+      "replica_addr": 297
+    },
+    {
+      "feature": 1410,
+      "primary_bank": 1,
+      "replica_bank": 6,
+      "calibration_standalone_gain": 315,
+      "calibration_events": 2205,
+      "primary_addr": 176,
+      "replica_addr": 301
+    },
+    {
+      "feature": 1475,
+      "primary_bank": 4,
+      "replica_bank": 6,
+      "calibration_standalone_gain": 314,
+      "calibration_events": 2094,
+      "primary_addr": 184,
+      "replica_addr": 302
+    },
+    {
+      "feature": 736,
+      "primary_bank": 5,
+      "replica_bank": 2,
+      "calibration_standalone_gain": 314,
+      "calibration_events": 1963,
+      "primary_addr": 92,
+      "replica_addr": 292
+    },
+    {
+      "feature": 1923,
+      "primary_bank": 0,
+      "replica_bank": 3,
+      "calibration_standalone_gain": 313,
+      "calibration_events": 1928,
+      "primary_addr": 240,
+      "replica_addr": 290
+    },
+    {
+      "feature": 1516,
+      "primary_bank": 3,
+      "replica_bank": 6,
+      "calibration_standalone_gain": 313,
+      "calibration_events": 1844,
+      "primary_addr": 189,
+      "replica_addr": 303
+    },
+    {
+      "feature": 390,
+      "primary_bank": 5,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 312,
+      "calibration_events": 2145,
+      "primary_addr": 48,
+      "replica_addr": 302
+    },
+    {
+      "feature": 866,
+      "primary_bank": 4,
+      "replica_bank": 0,
+      "calibration_standalone_gain": 310,
+      "calibration_events": 2072,
+      "primary_addr": 108,
+      "replica_addr": 298
+    },
+    {
+      "feature": 902,
+      "primary_bank": 5,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 309,
+      "calibration_events": 2111,
+      "primary_addr": 112,
+      "replica_addr": 303
+    },
+    {
+      "feature": 1921,
+      "primary_bank": 2,
+      "replica_bank": 0,
+      "calibration_standalone_gain": 308,
+      "calibration_events": 1965,
+      "primary_addr": 240,
+      "replica_addr": 299
+    },
+    {
+      "feature": 1409,
+      "primary_bank": 2,
+      "replica_bank": 0,
+      "calibration_standalone_gain": 306,
+      "calibration_events": 1888,
+      "primary_addr": 176,
+      "replica_addr": 300
+    },
+    {
+      "feature": 392,
+      "primary_bank": 3,
+      "replica_bank": 7,
+      "calibration_standalone_gain": 305,
+      "calibration_events": 1788,
+      "primary_addr": 49,
+      "replica_addr": 290
+    },
+    {
+      "feature": 1542,
+      "primary_bank": 6,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 304,
+      "calibration_events": 2155,
+      "primary_addr": 192,
+      "replica_addr": 304
+    },
+    {
+      "feature": 1988,
+      "primary_bank": 3,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 304,
+      "calibration_events": 2095,
+      "primary_addr": 248,
+      "replica_addr": 305
+    },
+    {
+      "feature": 863,
+      "primary_bank": 1,
+      "replica_bank": 4,
+      "calibration_standalone_gain": 303,
+      "calibration_events": 2081,
+      "primary_addr": 107,
+      "replica_addr": 293
+    },
+    {
+      "feature": 768,
+      "primary_bank": 2,
+      "replica_bank": 6,
+      "calibration_standalone_gain": 303,
+      "calibration_events": 1669,
+      "primary_addr": 96,
+      "replica_addr": 304
+    },
+    {
+      "feature": 964,
+      "primary_bank": 3,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 302,
+      "calibration_events": 1881,
+      "primary_addr": 120,
+      "replica_addr": 306
+    },
+    {
+      "feature": 1444,
+      "primary_bank": 7,
+      "replica_bank": 6,
+      "calibration_standalone_gain": 301,
+      "calibration_events": 2288,
+      "primary_addr": 180,
+      "replica_addr": 305
+    },
+    {
+      "feature": 1955,
+      "primary_bank": 0,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 301,
+      "calibration_events": 2142,
+      "primary_addr": 244,
+      "replica_addr": 307
+    },
+    {
+      "feature": 803,
+      "primary_bank": 1,
+      "replica_bank": 6,
+      "calibration_standalone_gain": 297,
+      "calibration_events": 2349,
+      "primary_addr": 100,
+      "replica_addr": 306
+    },
+    {
+      "feature": 1987,
+      "primary_bank": 4,
+      "replica_bank": 7,
+      "calibration_standalone_gain": 297,
+      "calibration_events": 2191,
+      "primary_addr": 248,
+      "replica_addr": 291
+    },
+    {
+      "feature": 1507,
+      "primary_bank": 4,
+      "replica_bank": 7,
+      "calibration_standalone_gain": 297,
+      "calibration_events": 2064,
+      "primary_addr": 188,
+      "replica_addr": 292
+    },
+    {
+      "feature": 490,
+      "primary_bank": 5,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 297,
+      "calibration_events": 1950,
+      "primary_addr": 61,
+      "replica_addr": 308
+    },
+    {
+      "feature": 999,
+      "primary_bank": 0,
+      "replica_bank": 3,
+      "calibration_standalone_gain": 297,
+      "calibration_events": 1761,
+      "primary_addr": 124,
+      "replica_addr": 291
+    },
+    {
+      "feature": 903,
+      "primary_bank": 4,
+      "replica_bank": 7,
+      "calibration_standalone_gain": 295,
+      "calibration_events": 2478,
+      "primary_addr": 112,
+      "replica_addr": 293
+    },
+    {
+      "feature": 893,
+      "primary_bank": 3,
+      "replica_bank": 0,
+      "calibration_standalone_gain": 295,
+      "calibration_events": 1705,
+      "primary_addr": 111,
+      "replica_addr": 301
+    },
+    {
+      "feature": 2056,
+      "primary_bank": 0,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 295,
+      "calibration_events": 1583,
+      "primary_addr": 257,
+      "replica_addr": 309
+    },
+    {
+      "feature": 2019,
+      "primary_bank": 4,
+      "replica_bank": 0,
+      "calibration_standalone_gain": 294,
+      "calibration_events": 2135,
+      "primary_addr": 252,
+      "replica_addr": 302
+    },
+    {
+      "feature": 1950,
+      "primary_bank": 5,
+      "replica_bank": 6,
+      "calibration_standalone_gain": 294,
+      "calibration_events": 1941,
+      "primary_addr": 243,
+      "replica_addr": 307
+    },
+    {
+      "feature": 1474,
+      "primary_bank": 5,
+      "replica_bank": 0,
+      "calibration_standalone_gain": 294,
+      "calibration_events": 1910,
+      "primary_addr": 184,
+      "replica_addr": 303
+    },
+    {
+      "feature": 556,
+      "primary_bank": 4,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 293,
+      "calibration_events": 2103,
+      "primary_addr": 69,
+      "replica_addr": 310
+    },
+    {
+      "feature": 1951,
+      "primary_bank": 4,
+      "replica_bank": 5,
+      "calibration_standalone_gain": 293,
+      "calibration_events": 1996,
+      "primary_addr": 243,
+      "replica_addr": 291
+    },
+    {
+      "feature": 1512,
+      "primary_bank": 7,
+      "replica_bank": 2,
+      "calibration_standalone_gain": 292,
+      "calibration_events": 2189,
+      "primary_addr": 189,
+      "replica_addr": 293
+    },
+    {
+      "feature": 456,
+      "primary_bank": 7,
+      "replica_bank": 2,
+      "calibration_standalone_gain": 291,
+      "calibration_events": 2497,
+      "primary_addr": 57,
+      "replica_addr": 294
+    },
+    {
+      "feature": 1576,
+      "primary_bank": 0,
+      "replica_bank": 3,
+      "calibration_standalone_gain": 291,
+      "calibration_events": 1853,
+      "primary_addr": 197,
+      "replica_addr": 292
+    },
+    {
+      "feature": 1001,
+      "primary_bank": 6,
+      "replica_bank": 3,
+      "calibration_standalone_gain": 289,
+      "calibration_events": 1799,
+      "primary_addr": 125,
+      "replica_addr": 293
+    },
+    {
+      "feature": 933,
+      "primary_bank": 6,
+      "replica_bank": 5,
+      "calibration_standalone_gain": 288,
+      "calibration_events": 2467,
+      "primary_addr": 116,
+      "replica_addr": 292
+    },
+    {
+      "feature": 1889,
+      "primary_bank": 7,
+      "replica_bank": 2,
+      "calibration_standalone_gain": 288,
+      "calibration_events": 2247,
+      "primary_addr": 236,
+      "replica_addr": 295
+    },
+    {
+      "feature": 859,
+      "primary_bank": 5,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 288,
+      "calibration_events": 1844,
+      "primary_addr": 107,
+      "replica_addr": 311
+    },
+    {
+      "feature": 1776,
+      "primary_bank": 5,
+      "replica_bank": 4,
+      "calibration_standalone_gain": 287,
+      "calibration_events": 1836,
+      "primary_addr": 222,
+      "replica_addr": 294
+    },
+    {
+      "feature": 457,
+      "primary_bank": 6,
+      "replica_bank": 0,
+      "calibration_standalone_gain": 286,
+      "calibration_events": 2143,
+      "primary_addr": 57,
+      "replica_addr": 304
+    },
+    {
+      "feature": 865,
+      "primary_bank": 7,
+      "replica_bank": 6,
+      "calibration_standalone_gain": 286,
+      "calibration_events": 2060,
+      "primary_addr": 108,
+      "replica_addr": 308
+    },
+    {
+      "feature": 825,
+      "primary_bank": 3,
+      "replica_bank": 6,
+      "calibration_standalone_gain": 286,
+      "calibration_events": 1847,
+      "primary_addr": 103,
+      "replica_addr": 309
+    },
+    {
+      "feature": 489,
+      "primary_bank": 6,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 284,
+      "calibration_events": 2071,
+      "primary_addr": 61,
+      "replica_addr": 312
+    },
+    {
+      "feature": 455,
+      "primary_bank": 0,
+      "replica_bank": 4,
+      "calibration_standalone_gain": 284,
+      "calibration_events": 2005,
+      "primary_addr": 56,
+      "replica_addr": 295
+    },
+    {
+      "feature": 1514,
+      "primary_bank": 5,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 283,
+      "calibration_events": 1961,
+      "primary_addr": 189,
+      "replica_addr": 313
+    },
+    {
+      "feature": 894,
+      "primary_bank": 0,
+      "replica_bank": 4,
+      "calibration_standalone_gain": 281,
+      "calibration_events": 2424,
+      "primary_addr": 111,
+      "replica_addr": 296
+    },
+    {
+      "feature": 963,
+      "primary_bank": 4,
+      "replica_bank": 1,
+      "calibration_standalone_gain": 281,
+      "calibration_events": 1857,
+      "primary_addr": 120,
+      "replica_addr": 314
+    },
+    {
+      "feature": 1477,
+      "primary_bank": 2,
+      "replica_bank": 7,
+      "calibration_standalone_gain": 280,
+      "calibration_events": 1975,
+      "primary_addr": 184,
+      "replica_addr": 294
+    },
+    {
+      "feature": 1480,
+      "primary_bank": 7,
+      "replica_bank": 0,
+      "calibration_standalone_gain": 279,
+      "calibration_events": 2372,
+      "primary_addr": 185,
+      "replica_addr": 305
+    },
+    {
+      "feature": 930,
+      "primary_bank": 1,
+      "replica_bank": 6,
+      "calibration_standalone_gain": 278,
+      "calibration_events": 2609,
+      "primary_addr": 116,
+      "replica_addr": 310
+    },
+    {
+      "feature": 1574,
+      "primary_bank": 6,
+      "replica_bank": 7,
+      "calibration_standalone_gain": 278,
+      "calibration_events": 2006,
+      "primary_addr": 196,
+      "replica_addr": 295
+    }
+  ]
+}

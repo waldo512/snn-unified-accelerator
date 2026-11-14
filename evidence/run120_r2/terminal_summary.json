@@ -1,0 +1,86 @@
+{
+  "basic_terminal_gates": {
+    "hold_nonnegative": true,
+    "routed_without_errors": true,
+    "setup_nonnegative": true,
+    "vivado_exit_zero": true,
+    "zero_critical_warnings": true,
+    "zero_errors": true
+  },
+  "basic_terminal_pass": true,
+  "route_status": {
+    "all_routable_nets_fully_routed": true,
+    "fully_routed_nets": 279676,
+    "routable_nets": 279676,
+    "routing_error_nets": 0,
+    "unrouted_nets": 0
+  },
+  "run_dir": "D:\\Desktop\\SNN_Accelerator_integration_FC_SRNN_SCNN\\results\\paper_evidence\\physical\\run120_current_v2_unified_impl_r2",
+  "timing": {
+    "hold_failing_endpoints": 0,
+    "setup_failing_endpoints": 0,
+    "ths_ns": 0.0,
+    "tns_ns": 0.0,
+    "whs_ns": 0.055,
+    "wns_ns": 0.075
+  },
+  "timing_report": "timing_summary_post_route.rpt",
+  "utilization": {
+    "bram_tiles": {
+      "available": 1470.0,
+      "used": 513.5,
+      "utilization_percent": 34.93
+    },
+    "dsps": {
+      "available": 3600.0,
+      "used": 1193.0,
+      "utilization_percent": 33.14
+    },
+    "slice_luts": {
+      "available": 433200.0,
+      "used": 144637.0,
+      "utilization_percent": 33.39
+    },
+    "slice_registers": {
+      "available": 866400.0,
+      "used": 72731.0,
+      "utilization_percent": 8.39
+    }
+  },
+  "utilization_report": "utilization_post_route.rpt",
+  "vivado_exit_code": "0",
+  "vivado_log_counts": {
+    "critical_warning_lines": 0,
+    "error_lines": 0
+  },
+  "vivado_status": {
+    "bitstream": "not_generated",
+    "black_boxes": "0",
+    "checkpoint_design_name": "checkpoint_post_synth",
+    "clock_count": "1",
+    "drc_critical_warnings": "0",
+    "drc_errors": "0",
+    "drc_severity_error": "0",
+    "fully_routed_nets": "279676",
+    "methodology_severity_error": "0",
+    "part": "xc7vx690tffg1761-3",
+    "power_report": "generated",
+    "qor_suggestions": "generated",
+    "routable_nets": "279676",
+    "route_complete": "1",
+    "routing_error_nets": "0",
+    "source_dcp": "/root/autodl-tmp/UNIFIED_SNN_FIXED_SHELL_COMPARISON_V2/server_results/fixed_shell_comparison_v2/unified_mask7/post_synth.dcp",
+    "status": "pass",
+    "ths_ns": "0.0",
+    "tns_ns": "0.0",
+    "top": "unified_h40_final_composition_top_v1",
+    "trace_payload_cell_count": "6270",
+    "trace_payload_nonconstant_control_count": "0",
+    "unplaced_primitives": "0",
+    "whs_ns": "0.055",
+    "wns_ns": "0.075"
+  },
+  "wrapper": {
+    "status": "pass"
+  }
+}
